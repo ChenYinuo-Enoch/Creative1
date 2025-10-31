@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>网络有界，道德无界</title>
+<style>
+  :root{
+    --bg:#fbfbfb;
+    --card:#ffffff;
+    --accent:#0b64a0;
+    --accent-2:#ff8a3d;
+    --muted:#6b6b6b;
+  }
+  body{font-family: "Microsoft YaHei", Arial, sans-serif; margin:0; background:linear-gradient(180deg,#f7f9fc,#fbfbff); color:#222;}
+  header{background:linear-gradient(90deg,var(--accent),#3b9bd8); color:#fff; padding:28px 16px; text-align:center;}
+  header h1{margin:0; font-size:28px; letter-spacing:1px;}
+  header p{margin:6px 0 0; opacity:0.95;}
+  main{max-width:960px; margin:18px auto; padding:12px;}
+  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;}
+  .card{background:var(--card); border-radius:10px; padding:14px; box-shadow:0 6px 18px rgba(13,40,88,0.06);}
+  h2{color:var(--accent); margin:0 0 8px; font-size:18px;}
+  p{color:#333; line-height:1.6; margin:0 0 8px;}
+  ul{margin:8px 0 0; padding-left:18px;}
+  .muted{color:var(--muted); font-size:13px;}
+  .cta{display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;}
+  .btn{background:var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer;}
+  .btn.secondary{background:var(--accent-2);}
+  .footer{margin:18px 0 40px; text-align:center; color:var(--muted); font-size:13px;}
+  .checkBox{display:flex; gap:8px; align-items:center;}
+  .result{margin-top:10px; padding:10px; border-radius:8px; background:#f3f8ff; color:#0a3f6b;}
+  @media print{
+    header{background: none; color: black;}
+    .card{box-shadow:none; border:1px solid #ddd; page-break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>网络有界，道德无界</h1>
+    <p>在虚拟世界中守护真实的自己 —— 理性上网，文明发言</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>引言</h2>
+      <p>网络既是工具，也是道德的试金石。每一次点击、每一条评论，都会影响他人的感受与社会的氛围。我们既要享受网络带来的便利，更要坚守善良与真实。</p>
+    </section>
+
+    <section class="grid" style="margin-top:14px;">
+      <div class="card">
+        <h2>匿名带来的“假勇气”</h2>
+        <p>匿名或虚拟身份会降低言行约束，容易导致攻击与谩骂。记住：屏幕另一端是人。</p>
+        <ul>
+          <li>切勿因匿名而放松责任。</li>
+          <li>遇到冲突优先冷静、避免人身攻击。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>谣言的两面性</h2>
+        <p>信息传播极快，但也更容易失真。遇到未经证实的消息，请先核实源头，不随意转发。</p>
+        <ul>
+          <li>核实来源：权威媒体、官方渠道、多处比对。</li>
+          <li>保持怀疑：标题党和断章取义常见于谣言。</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>数字焦虑与虚荣</h2>
+        <p>点赞数和粉丝只是数字，不应成为衡量自我价值的唯一标准。真正的价值来自诚实、责任与影响力。</p>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <h2>价值坚守（四条）</h2>
+      <ul>
+        <li><strong>尊重他人：</strong>每一句话都有重量。</li>
+        <li><strong>追求真实：</strong>不轻信、不造谣。</li>
+        <li><strong>传播正能量：</strong>用鼓励替代讽刺。</li>
+        <li><strong>守护良知：</strong>线上线下同为人。</li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <h2>互动：谣言自测（快速判断是否需核实）</h2>
+      <p class="muted">在下方输入一句你看到的信息，系统将给出简易建议（仅为互动提示）。</p>
+      <input id="inputText" type="text" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ddd;" placeholder="例如：某明星被捕，某产品能治百病..." />
+      <div class="cta">
+        <button class="btn" onclick="checkRumor()">检查</button>
+        <button class="btn secondary" onclick="document.getElementById('inputText').value=''">清空</button>
+      </div>
+      <div id="result" class="muted" style="margin-top:10px;"></div>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <h2>实践小贴士</h2>
+      <ul>
+        <li>遇到争议先冷却 24 小时，再评论或转发。</li>
+        <li>对来源可疑的信息，多找两个以上可信渠道确认。</li>
+        <li>发现不实内容可通过平台“举报”或引用权威渠道进行澄清。</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      <strong>口号：</strong>理性上网，从我做起；文明发言，从心出发。<br>
+      （建议打印此页并贴在教室 / 宿舍公告栏，提醒身边人）
+    </div>
+  </main>
+
+<script>
+function checkRumor(){
+  const v = document.getElementById('inputText').value.trim();
+  const out = document.getElementById('result');
+  if(!v){ out.textContent='请先输入要判断的信息。'; out.className='muted'; return; }
+
+  // 极其简单的启发式判断（非 AI，仅提示）
+  const keywords = ['突发','被捕','惊爆','紧急','能治','包治','绝对','骗局','传言','谣言','独家'];
+  let score=0;
+  const lower = v.toLowerCase();
+  for(const k of keywords){
+    if(lower.includes(k)) score++;
+  }
+
+  if(score>=2){
+    out.innerHTML = '<div class="result">建议：高度可疑。请先核实来源（查权威媒体或官方通告），避免转发。</div>';
+  } else if(score===1){
+    out.innerHTML = '<div class="result">建议：可能有争议。建议多渠道核实后再决定是否传播。</div>';
+  } else {
+    out.innerHTML = '<div class="result">建议：信息不含明显煽动或绝对化词语，但仍建议核验来源后再转发。</div>';
+  }
+}
+</script>
+</body>
+</html>
