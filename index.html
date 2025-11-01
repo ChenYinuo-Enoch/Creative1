@@ -1,89 +1,126 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>网络有界，道德无界</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>虚拟与真实之间：网络生活中的价值坚守</title>
 <style>
-  :root{
-    --bg:#fbfbfb;
-    --card:#ffffff;
-    --accent:#0b64a0;
-    --accent-2:#ff8a3d;
-    --muted:#6b6b6b;
+  body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+    color: #333;
+    margin: 0;
   }
-  body{font-family: "Microsoft YaHei", Arial, sans-serif; margin:0; background:linear-gradient(180deg,#f7f9fc,#fbfbff); color:#222;}
-  header{background:linear-gradient(90deg,var(--accent),#3b9bd8); color:#fff; padding:28px 16px; text-align:center;}
-  header h1{margin:0; font-size:28px; letter-spacing:1px;}
-  header p{margin:6px 0 0; opacity:0.95;}
-  main{max-width:960px; margin:18px auto; padding:12px;}
-  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;}
-  .card{background:var(--card); border-radius:10px; padding:14px; box-shadow:0 6px 18px rgba(13,40,88,0.06);}
-  h2{color:var(--accent); margin:0 0 8px; font-size:18px;}
-  p{color:#333; line-height:1.6; margin:0 0 8px;}
-  ul{margin:8px 0 0; padding-left:18px;}
-  .muted{color:var(--muted); font-size:13px;}
-  .cta{display:flex; gap:8px; margin-top:10px; flex-wrap:wrap;}
-  .btn{background:var(--accent); color:#fff; border:none; padding:8px 12px; border-radius:6px; cursor:pointer;}
-  .btn.secondary{background:var(--accent-2);}
-  .footer{margin:18px 0 40px; text-align:center; color:var(--muted); font-size:13px;}
-  .checkBox{display:flex; gap:8px; align-items:center;}
-  .result{margin-top:10px; padding:10px; border-radius:8px; background:#f3f8ff; color:#0a3f6b;}
-  @media print{
-    header{background: none; color: black;}
-    .card{box-shadow:none; border:1px solid #ddd; page-break-inside:avoid;}
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0288d1;
+    color: white;
+    border-bottom-left-radius: 40% 10%;
+    border-bottom-right-radius: 40% 10%;
+  }
+  h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.2em;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 30px 40px;
+    line-height: 1.8;
+  }
+  h2 {
+    color: #0277bd;
+    border-left: 5px solid #0288d1;
+    padding-left: 10px;
+  }
+  .quote {
+    background-color: #e1f5fe;
+    border-left: 6px solid #0288d1;
+    padding: 15px;
+    margin: 15px 0;
+    font-style: italic;
+  }
+  .quiz {
+    background-color: #f1f8e9;
+    border: 2px dashed #81c784;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .quiz button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .quiz button:hover {
+    background-color: #2e7d32;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
   }
 </style>
 </head>
 <body>
   <header>
-    <h1>网络有界，道德无界</h1>
-    <p>在虚拟世界中守护真实的自己 —— 理性上网，文明发言</p>
+    <h1>虚拟与真实之间：网络生活中的价值坚守</h1>
+    <p>——从世界观与人生观的角度思考数字时代的道德选择</p>
   </header>
 
   <main>
-    <section class="card">
-      <h2>引言</h2>
-      <p>网络既是工具，也是道德的试金石。每一次点击、每一条评论，都会影响他人的感受与社会的氛围。我们既要享受网络带来的便利，更要坚守善良与真实。</p>
+    <section>
+      <h2>🌍 一、从世界观看网络：真实与幻象之间</h2>
+      <p>在互联网的镜像世界里，信息以光速传播，现实与虚拟的界限日益模糊。世界不再是唯一的“客观存在”，而是被算法与人心共同塑造的“叙事空间”。</p>
+      <div class="quote">“我们看到的不一定是真相，但我们选择相信的，却决定了我们所处的世界。”</div>
+      <p>坚守道德，就是在多元的信息流中保持理性的判断，不让真相被情绪取代，不让“点击量”取代“事实”。</p>
     </section>
 
-    <section class="grid" style="margin-top:14px;">
-      <div class="card">
-        <h2>匿名带来的“假勇气”</h2>
-        <p>匿名或虚拟身份会降低言行约束，容易导致攻击与谩骂。记住：屏幕另一端是人。</p>
-        <ul>
-          <li>切勿因匿名而放松责任。</li>
-          <li>遇到冲突优先冷静、避免人身攻击。</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>谣言的两面性</h2>
-        <p>信息传播极快，但也更容易失真。遇到未经证实的消息，请先核实源头，不随意转发。</p>
-        <ul>
-          <li>核实来源：权威媒体、官方渠道、多处比对。</li>
-          <li>保持怀疑：标题党和断章取义常见于谣言。</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2>数字焦虑与虚荣</h2>
-        <p>点赞数和粉丝只是数字，不应成为衡量自我价值的唯一标准。真正的价值来自诚实、责任与影响力。</p>
-      </div>
-    </section>
-
-    <section class="card" style="margin-top:14px;">
-      <h2>价值坚守（四条）</h2>
+    <section>
+      <h2>🌱 二、从人生观看网络：自由与责任的平衡</h2>
+      <p>网络赋予了每个人表达的权利，也放大了选择的后果。人生的意义，不仅在于“能说什么”，更在于“该说什么”。</p>
+      <p>匿名的背后仍有真实的自我，键盘的敲击也能传递温度。人生观的成熟，意味着能在自由中自律、在匿名中守德。</p>
       <ul>
-        <li><strong>尊重他人：</strong>每一句话都有重量。</li>
-        <li><strong>追求真实：</strong>不轻信、不造谣。</li>
-        <li><strong>传播正能量：</strong>用鼓励替代讽刺。</li>
-        <li><strong>守护良知：</strong>线上线下同为人。</li>
+        <li>💬 不以愤怒为力量，而以理解为桥梁。</li>
+        <li>🌞 不被算法带走思考，而让理性主宰言语。</li>
+        <li>🌿 以善意构建连接，让网络成为温暖的空间。</li>
       </ul>
     </section>
 
-    <section class="card" style="margin-top:14px;">
-      <h2>互动：谣言自测（快速判断是否需核实）</h2>
+    <section>
+      <h2>🧭 三、价值坚守的三重境界</h2>
+      <ol>
+        <li><b>理性自觉：</b>在真假难辨的世界中，学会思考与验证。</li>
+        <li><b>情感共情：</b>在纷争中仍能理解他人，拒绝冷暴力。</li>
+        <li><b>道德行动：</b>以善意发声，用责任维护秩序。</li>
+      </ol>
+      <div class="quote">“真正的自由不是无边的言论，而是自我约束的勇气。”</div>
+    </section>
+
+    <section>
+      <h2>🔍 四、判断小游戏</h2>
+      <div class="quiz">
+        <p>下面哪一条新闻最可能是谣言？</p>
+        <form id="quizForm">
+          <label><input type="radio" name="question" value="1"> 某城市水被污染，喝一口会中毒？</label><br>
+          <label><input type="radio" name="question" value="2"> 官方发布：下周气温将明显回升。</label><br>
+          <label><input type="radio" name="question" value="3"> 某地动物园新增珍稀动物展区。</label><br>
+          <button type="button" onclick="checkAnswer()">提交答案</button>
+        </form>
+        <p id="result" style="margin-top:10px;font-weight:bold;"></p>
+      </div>
+    </section>
+
+<section class="card" style="margin-top:14px;">
+      <h2>💡五、谣言自测 </h2>
       <p class="muted">在下方输入一句你看到的信息，系统将给出简易建议（仅为互动提示）。</p>
       <input id="inputText" type="text" style="width:100%; padding:8px; border-radius:6px; border:1px solid #ddd;" placeholder="例如：某明星被捕，某产品能治百病..." />
       <div class="cta">
@@ -93,21 +130,30 @@
       <div id="result" class="muted" style="margin-top:10px;"></div>
     </section>
 
-    <section class="card" style="margin-top:14px;">
-      <h2>实践小贴士</h2>
-      <ul>
-        <li>遇到争议先冷却 24 小时，再评论或转发。</li>
-        <li>对来源可疑的信息，多找两个以上可信渠道确认。</li>
-        <li>发现不实内容可通过平台“举报”或引用权威渠道进行澄清。</li>
-      </ul>
-    </section>
-
-    <div class="footer">
-      <strong>口号：</strong>理性上网，从我做起；文明发言，从心出发。<br>
-      （建议打印此页并贴在教室 / 宿舍公告栏，提醒身边人）
-    </div>
   </main>
 
+  <footer>
+    <p>© 2025 网络文明与人生观教育专题 | 学生原创项目</p>
+  </footer>
+
+  <script>
+    function checkAnswer() {
+      const answer = document.querySelector('input[name="question"]:checked');
+      const result = document.getElementById("result");
+      if (!answer) {
+        result.textContent = "请选择一个选项哦！";
+        result.style.color = "red";
+        return;
+      }
+      if (answer.value === "1") {
+        result.textContent = "✅ 正确！这类‘喝水会中毒’的极端言论通常是谣言。";
+        result.style.color = "green";
+      } else {
+        result.textContent = "❌ 再想想，这条看似正常的信息其实不具备谣言特征。";
+        result.style.color = "orange";
+      }
+    }
+  </script>
 <script>
 function checkRumor(){
   const v = document.getElementById('inputText').value.trim();
@@ -131,5 +177,7 @@ function checkRumor(){
   }
 }
 </script>
+
+
 </body>
 </html>
